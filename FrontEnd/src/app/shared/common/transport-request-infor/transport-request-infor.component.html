@@ -1,0 +1,38 @@
+<form #form="ngForm" autocomplete="off" class="container">
+    <div class="form-group">
+        <label>Ref No<span>(*)</span></label>
+        <input type="text" name="refNo" #refNo="ngModel" [(ngModel)]="tranService.formData.refNo"
+            class="form-control form-control-lg" placeholder="Ref No" required
+            [class.invalid]="refNo.invalid &#038;&#038; refNo.touched">
+    </div>
+    <div class="form-group">
+        <label>Place From</label>
+        <input type="text" name="placeFrom" #placeFrom="ngModel" [(ngModel)]="tranService.formData.placeFrom"
+            class="form-control form-control-lg" placeholder="Place From" required
+            [class.invalid]="placeFrom.invalid &#038;&#038; placeFrom.touched">
+    </div>
+    <div class="form-group">
+        <label>Place To</label>
+        <input type="text" name="placeTo" #placeTo="ngModel" [(ngModel)]="tranService.formData.placeTo"
+            class="form-control form-control-lg" placeholder="Place To" required
+            [class.invalid]="placeTo.invalid &#038;&#038; placeTo.touched">
+    </div>
+    <div class="form-group">
+        <label>Excution Date</label>
+        <input type="text" name="excutionDate" #excutionDate="ngModel" [(ngModel)]="tranService.formData.excutionDate"
+            class="form-control form-control-lg" placeholder="Excution Date" required
+            [class.invalid]="excutionDate.invalid &#038;&#038; excutionDate.touched">
+    </div>
+    <div class="form-group">
+        <label>Driver Name</label>
+        <input type="text" name="driverName" #driverName="ngModel" [(ngModel)]="tranService.formData.driverName"
+            class="form-control form-control-lg" placeholder="Driver Name" required
+            [class.invalid]="driverName.invalid &#038;&#038; driverName.touched">
+    </div>
+    <div class="form-group">
+        <label>License Plate</label>
+        <input type="text" name="licensePlate" #licensePlate="ngModel" [(ngModel)]="tranService.formData.licensePlate"
+            class="form-control form-control-lg" placeholder="License Plate" required
+            [class.invalid]="licensePlate.invalid &#038;&#038; licensePlate.touched">
+    </div>
+</form>

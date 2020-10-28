@@ -1,0 +1,65 @@
+.list {
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  margin:20px 0px;
+}
+
+.list th {
+}
+.list table thead tr th {
+  background-color: #02419b;
+  color: #fff;
+  font-family: inherit;
+  height: 25px;
+}
+.list table thead tr td {
+ height: 25px;
+}
+.col1 {
+  width: 75px;
+}
+.col2 {
+  width: 75px;
+}
+.col3 {
+  width: 150px;
+}
+.col4 {
+  width: 150px;
+}
+.col5 {
+  width: 190px;
+}
+.col6 {
+  width: 190px;
+}
+.col7 {
+  width: 150px;
+}
+.col8 {
+  width: 75px;
+}
+.col9 {
+  width: 150px;
+}
+.col10 {
+  width: 75px;
+}
+.col11 {
+  width: 150px;
+}
+
+.list table thead tr .form-control {
+  width: inherit;
+  height: inherit;
+  border: transparent;
+  background-color: #f2f2f2;
+
+}
+.list table thead tr .form-control:focus:active {
+  background-color:#fff;
+
+}
+.list table thead .filter {
+  background-color: #f2f2f2;
+}
