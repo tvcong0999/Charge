@@ -1,0 +1,70 @@
+.fa-upload {
+  padding-right: 5px;
+  color: cornsilk;
+}
+.btnupload button {
+  background-color: rgb(35, 105, 35);
+  color: cornsilk;
+}
+.btnupload button:hover {
+  background-color: rgb(2, 75, 2);
+}
+.changesurcharge {
+  text-align: center;
+  margin-left: 15px;
+  align-self:center;
+
+}
+.changesurcharge .image {
+  width: 232px;
+  height: 232px;
+  background-color: cyan;
+}
+
+.changesurcharge .btncamera {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 10px;
+}
+.changesurcharge .btncamera .fa-camera-retro {
+  font-size: 22px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  height: 400px;
+}
+.container .upload {
+  position: relative;
+}
+.container .upload .grbtnsave {
+  width: 250px;
+  position: absolute;
+  bottom: 5px;
+  right: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .upload .grbtnsave .btnsave {
+  width: 100px;
+}
+.container .upload .grbtnsave .btnerror {
+  background-color: transparent;
+  color: rgb(55, 114, 182);
+}
+.fa-plus-square {
+  padding-right: 5px;
+}
+span {
+  color: red;
+  padding-left: 10px;
+}
+
+select {
+  margin-top: 7px;
+}
+label {
+  font-size: 19px;
+  color: blueviolet;
+}

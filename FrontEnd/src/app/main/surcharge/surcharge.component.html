@@ -1,0 +1,15 @@
+<div class="container">
+    <form class="sur">
+        <label for="surcharge">Surcharge <span>(*)</span></label><br>
+        <select id="surcharge" (change)="chooseSurcharge()" class="selectpicker" data-show-subtext="true"
+            data-live-search="true">
+            <option value="" disabled selected>Choose surcharge</option>
+            <option *ngFor = "let sur of listSurchageService.listSurchage" [ngValue] = "sur.chargeName_VN">{{sur.chargeName_VN}}</option>
+            <!-- <option value="Phicauduong">Phí cầu đường</option>
+            <option value="Phitangbo">Phí tăng bo</option>
+            <option value="Phivesinhcont">Phí vệ sinh cont</option> -->
+        </select>
+    </form>
+
+    <button (click)="back()" routerLink=""><i class="fas fa-arrow-circle-left"></i>Back</button>
+</div>
