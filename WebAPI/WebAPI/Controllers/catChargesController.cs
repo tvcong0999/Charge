@@ -31,6 +31,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<catCharge>> GetcatCharge(string id)
         {
+            var test = id;
             var catCharge = await _context.catCharge.FindAsync(id);
 
             if (catCharge == null)

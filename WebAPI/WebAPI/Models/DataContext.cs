@@ -12,30 +12,35 @@ namespace WebAPI.Models
         { }
         public DbSet<catCharge> catCharge { get; set; }
         public DbSet<TransportRequestInfor> TransportRequestInfor { get; set; }
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<TransportRequestInfor>(entity =>
             {
+                entity.HasNoKey();
                 entity.ToTable("TransportRequestInfor");
 
-                entity.Property(e => e.RefNo);
+                entity.Property(e => e.RefNo).IsRequired();
 
 
-                entity.Property(e => e.PlaceFrom);
+                entity.Property(e => e.PlaceFrom).IsRequired();
 
 
-                entity.Property(e => e.PlaceTo);
+                entity.Property(e => e.PlaceTo).IsRequired();
 
-                entity.Property(e => e.DriverName);
-
-
-                entity.Property(e => e.ExcutionDate);
+                entity.Property(e => e.DriverName).IsRequired();
 
 
-                entity.Property(e => e.LicensePlate);
+                entity.Property(e => e.ExcutionDate).IsRequired();
 
-                modelBuilder.Query<TransportRequestInfor>();
+
+                entity.Property(e => e.LicensePlate).IsRequired();
+
             });
+            modelBuilder.Query<TransportRequestInfor>();
         }
     }
 }

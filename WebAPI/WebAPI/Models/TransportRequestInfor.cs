@@ -7,7 +7,6 @@ namespace WebAPI.Models
 {
     public class TransportRequestInfor
     {
-        public string ID { get; set; }
         public string RefNo { get; set; }
         public string PlaceFrom { get; set; }
         public string PlaceTo { get; set; }

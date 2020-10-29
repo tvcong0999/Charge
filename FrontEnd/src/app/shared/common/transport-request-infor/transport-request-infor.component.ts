@@ -17,16 +17,13 @@ export class TransportRequestInforComponent implements OnInit {
   ngOnInit(): void {
   }
   getInforTransportRequest(){
-    this.tranService.getAllInforTransportRequest().subscribe((res)=>{
-      for(let infor of res as TransportRequestInfor[])
+    this.tranService.getInforTransportRequestID(this.tranService.formData.refNo).subscribe((res)=>{
 
-      
-      {
-        if(infor.refNo === this.tranService.formData.refNo)
+        if((res as TransportRequestInfor).refNo === this.tranService.formData.refNo)
         {
-          this.tranService.formData = Object.assign({}, infor);
+          this.tranService.formData = Object.assign({}, res as TransportRequestInfor);
         }
-      }
-    })
+      
+    });
   }
 }

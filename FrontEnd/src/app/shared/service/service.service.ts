@@ -13,11 +13,7 @@ export class TransportRequestInforService {
 
   constructor(private http: HttpClient) { }
   getInforTransportRequestID(id) {
-    this.http
-      .get(`${this.rootURL}/TransportRequestInfors/${id}`)
-      .toPromise()
-      .then((res) => {this.transportRequestInfor = res as TransportRequestInfor;
-      });
+   return  this.http.get(`${this.rootURL}/TransportRequestInfors/${id}`);
   }
   getAllInforTransportRequest(){
     return this.http.get(`${this.rootURL}/TransportRequestInfors/`);
